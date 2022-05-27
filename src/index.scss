@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: "SFPRODISPLAY";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face {
+  font-family: "SFPRODISPLAY";
+  src: local("SFPRODISPLAYBOLD"),
+   url("./Fonts/SFPRODISPLAYBOLD.OTF") format("truetype");
+  font-weight: 800;
+  }
+  @font-face {
+    font-family: "SFPRODISPLAY";
+    src: local("SFPRODISPLAYBOLD"),
+     url("./Fonts/SFPRODISPLAYREGULAR.OTF") format("truetype");
+    font-weight: 400;
+    }
+    @font-face {
+      font-family: "SFPRODISPLAY";
+      src: local("SFPRODISPLAYBOLD"),
+       url("./Fonts/SFPRODISPLAYMEDIUM.OTF") format("truetype");
+      font-weight: 600;
+      }

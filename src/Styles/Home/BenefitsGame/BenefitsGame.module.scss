@@ -1,0 +1,672 @@
+/** @format */
+
+.benefitsGame {
+	height: 1052px;
+	background-color: #101932;
+}
+
+.benefitsGame_title {
+	text-align: center;
+	color: #ffffff;
+	.title_title {
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 60px;
+	}
+
+	.title_sub {
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 42px;
+		opacity: 0.5;
+		margin-bottom: 50px;
+	}
+}
+
+.benefitsGame_row {
+	display: flex;
+	flex-wrap: wrap;
+
+	.row_column {
+		&:first-child {
+			flex: 0 1 100%;
+		}
+
+		&:nth-child(even) {
+			flex: 0 1 50%;
+		}
+
+		&:last-child {
+			flex: 0 1 50%;
+		}
+	}
+}
+
+.generalItem {
+	background: #071022;
+	border-radius: 30px;
+	padding: 36px 35px;
+	margin-bottom: 50px;
+	height: auto;
+	.generalItem_row {
+		display: flex;
+		align-items: center;
+		margin: 0 -20.5px;
+
+		.row_column {
+			padding: 0 20.5px;
+			flex: 0 1 70%;
+			&:first-child {
+				flex: 0 1 30%;
+			}
+		}
+	}
+	.column_item {
+		.generalItem_title {
+			color: #ffffff;
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 36px;
+			margin-bottom: 20px;
+		}
+
+		.generalItem_text {
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 29px;
+			letter-spacing: 0em;
+			color: rgba(255, 255, 255, 0.6);
+			white-space: pre-line;
+		}
+		.generalItem_image {
+			position: relative;
+			width: 649px;
+			height: 288px;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+.itemLeft {
+	background: #ff9429;
+	border-radius: 30px;
+	padding: 36px 30px;
+	padding-right: 60px;
+	margin-right: 20px;
+	height: auto;
+	.itemLeft_row {
+		display: flex;
+		align-items: center;
+		margin: 0 -15px;
+	}
+
+	.row_column {
+		padding: 0 15px;
+		&:last-child {
+			flex: 0 1 80%;
+		}
+
+		&:first-child {
+			flex: 0 1 20%;
+		}
+	}
+
+	.column_item {
+		color: #ffffff;
+		.item_image {
+			width: 153px;
+			height: 160px;
+			position: relative;
+			z-index: 1;
+			border-radius: 50%;
+			overflow: hidden;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.item_title {
+			margin-bottom: 20px;
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 36px;
+		}
+		.item_text {
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 33px;
+			opacity: 0.8;
+		}
+	}
+}
+
+.itemRight {
+	background: #067ccb;
+	border-radius: 30px;
+	padding: 38px 30px;
+	padding-right: 20px;
+	margin-left: 20px;
+	height: auto;
+	.itemRight_row {
+		display: flex;
+		align-items: center;
+		margin: 0 -15px;
+	}
+
+	.row_column {
+		padding: 0 15px;
+		&:last-child {
+			flex: 0 1 80%;
+		}
+
+		&:first-child {
+			flex: 0 1 20%;
+		}
+	}
+
+	.column_item {
+		color: #ffffff;
+		.item_image {
+			width: 175px;
+			height: 160px;
+			position: relative;
+			z-index: 1;
+		}
+		.item_title {
+			margin-bottom: 20px;
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 36px;
+		}
+		.item_text {
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 33px;
+			opacity: 0.8;
+		}
+	}
+}
+@media (max-width: 1700px) {
+	.benefitsGame {
+		min-height: 1052px;
+		background-color: #101932;
+		padding-bottom: 100px;
+	}
+
+	.benefitsGame_title {
+		text-align: center;
+		color: #ffffff;
+		.title_title {
+			font-size: 40px;
+			font-weight: 700;
+			line-height: 60px;
+		}
+
+		.title_sub {
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 42px;
+			opacity: 0.5;
+			margin-bottom: 50px;
+		}
+	}
+
+	.benefitsGame_row {
+		display: flex;
+		flex-wrap: wrap;
+
+		.row_column {
+			&:first-child {
+				flex: 0 1 100%;
+			}
+
+			&:nth-child(even) {
+				flex: 0 1 50%;
+			}
+
+			&:last-child {
+				flex: 0 1 50%;
+			}
+		}
+	}
+
+	.generalItem {
+		background: #071022;
+		border-radius: 30px;
+		padding: 25px;
+		margin-bottom: 30px;
+		height: auto;
+		.generalItem_row {
+			display: flex;
+			align-items: center;
+			margin: 0 -20.5px;
+
+			.row_column {
+				padding: 0 20.5px;
+				flex: 0 1 55%;
+				&:first-child {
+					flex: 0 1 35%;
+				}
+			}
+		}
+		.column_item {
+			.generalItem_title {
+				color: #ffffff;
+				font-size: 25px;
+				font-weight: 700;
+				line-height: 36px;
+				margin-bottom: 20px;
+			}
+
+			.generalItem_text {
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 29px;
+				letter-spacing: 0em;
+				color: rgba(255, 255, 255, 0.6);
+				white-space: pre-line;
+			}
+			.generalItem_image {
+				position: relative;
+				width: 450px;
+				height: 350px;
+
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+
+	.itemLeft {
+		background: #ff9429;
+		border-radius: 30px;
+		padding: 20px;
+		padding-right: 0px;
+		margin-right: 15px;
+		height: auto;
+		.itemLeft_row {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin: 0 -0px;
+		}
+
+		.row_column {
+			padding: 0 0px;
+			&:last-child {
+				flex: 0 1 80%;
+			}
+
+			&:first-child {
+				flex: 0 1 20%;
+			}
+		}
+
+		.column_item {
+			color: #ffffff;
+			.item_image {
+				width: 153px;
+				height: 160px;
+				position: relative;
+				z-index: 1;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-bottom: 20px;
+			}
+			.item_title {
+				margin-bottom: 10px;
+				font-size: 25px;
+				font-weight: 700;
+				line-height: 36px;
+			}
+			.item_text {
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 33px;
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.itemRight {
+		background: #067ccb;
+		border-radius: 30px;
+		padding: 20px;
+		padding-right: 0px;
+		margin-left: 15px;
+		height: auto;
+		.itemRight_row {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin: 0 -0px;
+		}
+
+		.row_column {
+			padding: 0 0px;
+			&:last-child {
+				flex: 0 1 80%;
+			}
+
+			&:first-child {
+				flex: 0 1 20%;
+			}
+		}
+
+		.column_item {
+			color: #ffffff;
+			.item_image {
+				width: 175px;
+				height: 160px;
+				position: relative;
+				z-index: 1;
+				margin-bottom: 20px;
+			}
+			.item_title {
+				margin-bottom: 10px;
+				font-size: 25px;
+				font-weight: 700;
+				line-height: 36px;
+			}
+			.item_text {
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 33px;
+				opacity: 0.8;
+			}
+		}
+	}
+}
+@media (max-width: 1207px) {
+	.benefitsGame {
+		min-height: 0px;
+		height: auto;
+		background-color: #101932;
+		padding-bottom: 50px;
+	}
+
+	.benefitsGame_row {
+		display: flex;
+		flex-wrap: wrap;
+
+		.row_column {
+			&:first-child {
+				flex: 0 1 100%;
+			}
+
+			&:nth-child(even) {
+				flex: 0 1 100%;
+			}
+
+			&:last-child {
+				flex: 0 1 100%;
+			}
+		}
+	}
+
+	.generalItem {
+		background: #071022;
+		border-radius: 30px;
+		padding: 25px;
+		margin-bottom: 30px;
+		height: auto;
+		.generalItem_row {
+			display: block;
+			align-items: center;
+			flex-direction: column;
+			margin: 0 -0px;
+
+			.row_column {
+				padding: 0 0px;
+				flex: 0 1 100%;
+				&:first-child {
+					flex: 0 1 100%;
+				}
+			}
+		}
+		.column_item {
+			.generalItem_title {
+				color: #ffffff;
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 36px;
+				margin-bottom: 20px;
+			}
+
+			.generalItem_text {
+				font-size: 19px;
+				font-weight: 400;
+				line-height: 22px;
+				letter-spacing: 0em;
+				color: rgba(255, 255, 255, 0.6);
+				white-space: pre-line;
+			}
+			.generalItem_image {
+				position: relative;
+				max-width: 450px;
+				height: 250px;
+
+				img {
+					max-width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+
+	.itemLeft {
+		background: #ff9429;
+		border-radius: 30px;
+		padding: 20px;
+		padding-right: 0px;
+		margin-right: 0px;
+		margin-bottom: 30px;
+		height: auto;
+		.itemLeft_row {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin: 0 -0px;
+		}
+
+		.row_column {
+			padding: 0 0px;
+			&:last-child {
+				flex: 0 1 100%;
+			}
+
+			&:first-child {
+				flex: 0 1 100%;
+			}
+		}
+
+		.column_item {
+			color: #ffffff;
+			.item_image {
+				width: 153px;
+				height: 160px;
+				position: relative;
+				z-index: 1;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-bottom: 20px;
+			}
+			.item_title {
+				margin-bottom: 10px;
+				font-size: 25px;
+				font-weight: 700;
+				line-height: 26px;
+			}
+			.item_text {
+				font-size: 19px;
+				font-weight: 400;
+				line-height: 22px;
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.itemRight {
+		background: #067ccb;
+		border-radius: 30px;
+		padding: 20px;
+		padding-right: 0px;
+		margin-left: 0px;
+		height: auto;
+		.itemRight_row {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin: 0 -0px;
+		}
+
+		.row_column {
+			padding: 0 0px;
+			&:last-child {
+				flex: 0 1 100%;
+			}
+
+			&:first-child {
+				flex: 0 1 100%;
+			}
+		}
+
+		.column_item {
+			color: #ffffff;
+			.item_image {
+				width: 175px;
+				height: 160px;
+				position: relative;
+				z-index: 1;
+				margin-bottom: 20px;
+			}
+			.item_title {
+				margin-bottom: 10px;
+				font-size: 22px;
+				font-weight: 700;
+				line-height: 36px;
+			}
+			.item_text {
+				font-size: 19px;
+				font-weight: 400;
+				line-height: 22px;
+				opacity: 0.8;
+			}
+		}
+	}
+}
+
+@media (max-width: 525px) {
+	.benefitsGame {
+		min-height: 0px;
+		height: auto;
+		background-color: #101932;
+		padding-bottom: 0px;
+	}
+
+	.generalItem {
+		.column_item {
+			.generalItem_image {
+				position: relative;
+				width: 100%;
+
+				height: 150px;
+
+				img {
+					max-width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+
+	.itemLeft {
+		background: #ff9429;
+		border-radius: 30px;
+		padding: 20px;
+		padding-right: 0px;
+		margin-right: 0px;
+		margin-bottom: 30px;
+		height: auto;
+		.itemLeft_row {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin: 0 -0px;
+		}
+
+		.row_column {
+			padding: 0 0px;
+			&:last-child {
+				flex: 0 1 100%;
+			}
+
+			&:first-child {
+				flex: 0 1 100%;
+			}
+		}
+
+		.column_item {
+			color: #ffffff;
+			.item_image {
+				width: 115px;
+				height: 125px;
+				position: relative;
+				z-index: 1;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-bottom: 20px;
+				object-fit: contain;
+			}
+			.item_title {
+				margin-bottom: 10px;
+				font-size: 25px;
+				font-weight: 700;
+				line-height: 26px;
+			}
+			.item_text {
+				font-size: 19px;
+				font-weight: 400;
+				line-height: 22px;
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.itemRight {
+		.column_item {
+			color: #ffffff;
+			.item_image {
+				width: 115px;
+				height: 100px;
+			}
+		}
+	}
+}

@@ -1,0 +1,154 @@
+/** @format */
+
+.Accordion {
+	overflow: hidden;
+	width: 1000px;
+	margin-bottom: 20px;
+	.title {
+		width: 100%;
+		background-color: black;
+		padding: 25px 35px;
+		padding-right: 25px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		transition: all ease 0.4s;
+		cursor: pointer;
+		color: #ffffff;
+		background: #384d70;
+		border-radius: 15px;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 24px;
+	}
+
+	.titleActive {
+		background-color: rgb(61, 61, 131);
+		transition: all ease 0.4s;
+	}
+	.text {
+		transition: all ease 0.4s;
+		height: 0;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 24px;
+		color: white;
+	}
+
+	.textActive {
+		padding: 5px 5px;
+		height: auto;
+		opacity: 1;
+		transform: scale(1);
+		transition: all ease 0.4s;
+	}
+}
+
+.burger {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #e11d2e;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	i {
+		transition: all ease 0.4s;
+	}
+}
+
+.burgerActive {
+	i {
+		transition: all ease 0.4s;
+		transform: rotate(90deg);
+	}
+}
+
+@media (max-width: 1032px) {
+	.Accordion {
+		overflow: hidden;
+		width: 700px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 720px) {
+	.Accordion {
+		overflow: hidden;
+		width: 100%;
+		margin-bottom: 20px;
+
+		.title {
+			width: 100%;
+			background-color: black;
+			padding: 20px 35px;
+			padding-right: 25px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			transition: all ease 0.4s;
+			cursor: pointer;
+			color: #ffffff;
+			background: #384d70;
+			border-radius: 15px;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 20px;
+		}
+		.burger {
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			background-color: #e11d2e;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			i {
+				transition: all ease 0.4s;
+				font-size: 12px;
+			}
+		}
+	}
+}
+@media (max-width: 481px) {
+	.Accordion {
+		overflow: hidden;
+		width: 100%;
+		margin-bottom: 20px;
+
+		.title {
+			width: 100%;
+			background-color: black;
+			padding: 20px 35px;
+			padding-right: 25px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			transition: all ease 0.4s;
+			cursor: pointer;
+			color: #ffffff;
+			background: #384d70;
+			border-radius: 15px;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 20px;
+		}
+		.burger {
+			min-width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			background-color: #e11d2e;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 5px;
+			i {
+				transition: all ease 0.4s;
+				font-size: 12px;
+			}
+		}
+	}
+}

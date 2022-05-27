@@ -1,0 +1,41 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+}
+
+li,
+a {
+	list-style: none;
+	text-decoration: none;
+	color: #2a2a2a;
+}
+
+button {
+	background: none;
+	border: none;
+	outline: none;
+}
+
+input,
+textarea {
+	border: none;
+	background-color: none;
+	outline: none;
+	resize: none;
+}
+
+.Layout {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	.page {
+		flex: 1 1 auto;
+	}
+}

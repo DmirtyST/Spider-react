@@ -1,0 +1,38 @@
+.appWrapper{
+  background-color: rgb(240, 240, 240);
+  
+ 
+}
+
+.appWrapperActive body{
+  background-color: rgb(196, 30, 30);
+  overflow: hidden;
+ 
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li,a{
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+.appWrapperContent{
+  min-height: 100vh;
+ 
+ 
+}
+
+.content{
+ 
+  width: 70%;
+  min-height: 100vh;
+  padding-top: 50px;
+  
+  padding-left: 35px;
+  
+}

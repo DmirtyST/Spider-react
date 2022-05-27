@@ -1,0 +1,556 @@
+/** @format */
+.screenPage_momileItem {
+	display: none;
+}
+
+.screenPage {
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 4;
+	background-color: #162756;
+}
+.screenPage_eclipce {
+	position: absolute;
+	visibility: hidden;
+	z-index: -1;
+	li {
+		&:first-child {
+			background: radial-gradient(34.94% 34.94% at 50% 50%, #e11d2e 0%, rgba(255, 81, 96, 0.58) 100%);
+			opacity: 0.6;
+			filter: blur(80px);
+			width: 355.64px;
+			height: 356px;
+			top: 289px;
+			left: 70px;
+			position: absolute;
+		}
+		&:last-child {
+			background: radial-gradient(34.94% 34.94% at 50% 50%, #e11d2e 0%, rgba(255, 81, 96, 0.58) 100%);
+			opacity: 0.6;
+			filter: blur(60px);
+			width: 355.64px;
+			height: 356px;
+			top: -280px;
+			left: -80px;
+			position: absolute;
+		}
+	}
+}
+.screenPage_img {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.screenPage_botoomBanner {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 38px;
+}
+
+.screenPage_row {
+	display: flex;
+
+	.row_column {
+		flex: 0 1 50%;
+	}
+}
+.screenPage_item {
+	.item_title {
+		max-width: 700px;
+		font-size: 80px;
+		font-weight: 800;
+		line-height: 90px;
+
+		color: #ffffff;
+		span {
+			color: #e11d2e;
+		}
+	}
+
+	.item_sub {
+		font-size: 25px;
+		font-weight: 500;
+		line-height: 30px;
+		color: #71768e;
+		margin-bottom: 40px;
+	}
+
+	.item_text {
+		max-width: 690px;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 38px;
+		color: #a0a3b5;
+		margin-bottom: 46px;
+	}
+
+	.item_box_button {
+		display: flex;
+		color: #ffffff;
+		align-items: center;
+		margin-bottom: 20px;
+		.box_button_join {
+			padding: 25px 54px;
+			font-size: 25px;
+			font-weight: 700;
+			line-height: 30px;
+			position: relative;
+			border-radius: 10px;
+			margin-right: 25px;
+			z-index: 1;
+			background: #e11d2e;
+			overflow: hidden;
+			cursor: pointer;
+			&::before {
+				content: "";
+				height: 100%;
+				width: 1px;
+				background-color: #ffffff;
+				left: 0;
+				top: 0;
+			}
+			&:hover {
+			}
+		}
+
+		.box_button_more {
+			padding: 27px 30px;
+			font-size: 22px;
+			font-weight: 500;
+			line-height: 26px;
+			background: rgba(255, 255, 255, 0.05);
+			border-radius: 10px;
+
+			&:hover {
+				background: rgba(157, 156, 156, 0.2);
+			}
+		}
+	}
+
+	.item_box_codes {
+		padding: 14px 35px;
+		border: 1px solid rgba(255, 255, 255, 0.09);
+		border-radius: 10px;
+		max-width: 635px;
+		.box_codes_title {
+			font-family: "SF Pro Display";
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 18px;
+			color: rgba(255, 255, 255, 0.2);
+		}
+
+		.box_codes_code {
+			font-weight: 400;
+			font-size: 25px;
+			line-height: 30px;
+			color: rgba(255, 255, 255, 0.4);
+		}
+	}
+}
+
+.screenPage_imgItem {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	.imgItem_image {
+		position: relative;
+		height: 546.0046997070312px;
+		width: 592.000732421875px;
+		z-index: 1;
+	}
+}
+
+@media (max-width: 1700px) {
+	.screenPage {
+		height: calc(100vh - 0px);
+	}
+
+	.screenPage_row {
+		display: flex;
+
+		.row_column {
+			flex: 0 1 55%;
+			&:first-child {
+				flex: 0 1 40%;
+			}
+		}
+	}
+	.screenPage_item {
+		.item_title {
+			font-size: 50px;
+
+			line-height: 55px;
+		}
+
+		.item_sub {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 20px;
+		}
+
+		.item_text {
+			max-width: 690px;
+			font-size: 22px;
+			line-height: 38px;
+		}
+
+		.item_box_button {
+			margin-bottom: 20px;
+			.box_button_join {
+				padding: 20px 40px;
+				font-size: 18px;
+				line-height: 30px;
+			}
+
+			.box_button_more {
+				padding: 22px 25px;
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 26px;
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 10px;
+
+				&:hover {
+					background: rgba(157, 156, 156, 0.2);
+				}
+			}
+		}
+
+		.item_box_codes {
+			padding: 14px 25px;
+			max-width: 535px;
+			min-width: 500px;
+
+			.box_codes_title {
+				font-size: 15px;
+				line-height: 18px;
+			}
+
+			.box_codes_code {
+				font-size: 18px;
+				line-height: 25px;
+			}
+		}
+	}
+
+	.screenPage_imgItem {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		top: 50px;
+		left: 55px;
+		width: 100%;
+		height: 100%;
+		.imgItem_image {
+			position: relative;
+			height: 366.0046997070312px;
+			width: 400.000732421875px;
+			z-index: 1;
+		}
+	}
+}
+
+@media (max-width: 1020px) {
+	.screenPage {
+		height: calc(0vh - 0px);
+		height: auto;
+		padding: 80px 0;
+	}
+
+	.screenPage_img {
+		position: absolute;
+		display: none;
+		visibility: hidden;
+	}
+	.screenPage_item {
+		.item_title {
+			font-size: 70px;
+			font-weight: 800;
+			line-height: 90px;
+
+			color: #ffffff;
+			span {
+				color: #e11d2e;
+			}
+		}
+
+		.item_sub {
+			font-size: 25px;
+			font-weight: 500;
+			line-height: 30px;
+			color: #71768e;
+			margin-bottom: 40px;
+		}
+
+		.item_text {
+			max-width: 690px;
+			font-weight: 400;
+			font-size: 30px;
+			line-height: 38px;
+			color: #a0a3b5;
+			margin-bottom: 46px;
+		}
+
+		.item_box_button {
+			display: inline-block;
+			color: #ffffff;
+			align-items: center;
+			margin-bottom: 20px;
+			.box_button_join {
+				padding: 25px 60px;
+				font-size: 25px;
+				font-weight: 700;
+				line-height: 30px;
+				position: relative;
+				border-radius: 10px;
+				margin-right: 0px;
+				z-index: 1;
+				background: #e11d2e;
+				overflow: hidden;
+				cursor: pointer;
+				margin-bottom: 15px;
+				text-align: center;
+			}
+
+			.box_button_more {
+				padding: 27px 30px;
+				font-size: 22px;
+				font-weight: 500;
+				line-height: 26px;
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 10px;
+				text-align: center;
+
+				&:hover {
+					background: rgba(157, 156, 156, 0.2);
+				}
+			}
+		}
+
+		.item_box_codes {
+			padding: 14px 35px;
+			border: 1px solid rgba(255, 255, 255, 0.09);
+			border-radius: 10px;
+			max-width: 700px;
+			min-width: 0px;
+			.box_codes_title {
+				font-family: "SF Pro Display";
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 18px;
+				color: rgba(255, 255, 255, 0.2);
+			}
+		}
+	}
+
+	.screenPage_row {
+		display: flex;
+
+		.row_column {
+			flex: 0 1 100%;
+			&:first-child {
+				flex: 0 1 100%;
+			}
+			&:last-child {
+				display: none;
+				position: absolute;
+			}
+		}
+	}
+}
+
+@media (max-width: 657px) {
+	.screenPage_momileItem {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+		.momileItem_image {
+			position: relative;
+			width: 200px;
+			height: 181px;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.screenPage_botoomBanner {
+		visibility: hidden;
+		display: none;
+	}
+	.screenPage_eclipce {
+		visibility: visible;
+	}
+	.screenPage_row {
+		display: block;
+	}
+	.screenPage {
+		overflow: hidden;
+		height: 0vh;
+
+		height: auto;
+		padding-bottom: 20px;
+
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		padding-top: 120px;
+		z-index: 4;
+		background-color: #162756;
+	}
+	.screenPage_item {
+		max-width: 100%;
+
+		.item_title {
+			max-width: 100%;
+			font-size: 50px;
+			font-weight: 800;
+			line-height: 50px;
+
+			color: #ffffff;
+			span {
+				color: #e11d2e;
+			}
+		}
+
+		.item_sub {
+			font-size: 15px;
+			font-weight: 500;
+			line-height: 17px;
+			color: #71768e;
+			margin-bottom: 40px;
+		}
+
+		.item_text {
+			font-size: 22px;
+			font-weight: 400;
+			line-height: 26px;
+		}
+
+		.item_box_button {
+			padding: 0 55px;
+			display: block;
+			color: #ffffff;
+			align-items: stretch;
+			margin-bottom: 20px;
+			.box_button_join {
+				padding: 25px 60px;
+				font-size: 25px;
+				font-weight: 700;
+				line-height: 30px;
+				position: relative;
+				border-radius: 10px;
+				margin-right: 0px;
+				z-index: 1;
+				background: #e11d2e;
+				overflow: hidden;
+				cursor: pointer;
+				margin-bottom: 15px;
+			}
+
+			.box_button_more {
+				padding: 27px 30px;
+				font-size: 22px;
+				font-weight: 500;
+				line-height: 26px;
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 10px;
+
+				&:hover {
+					background: rgba(157, 156, 156, 0.2);
+				}
+			}
+		}
+
+		.item_box_codes {
+			padding: 14px 35px;
+			border: 1px solid rgba(255, 255, 255, 0.09);
+			border-radius: 10px;
+
+			.box_codes_title {
+				font-family: "SF Pro Display";
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 18px;
+				color: rgba(255, 255, 255, 0.2);
+			}
+
+			.box_codes_code {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 17px;
+			}
+		}
+	}
+}
+
+@media (max-width: 452px) {
+	.screenPage_item {
+		.item_box_button {
+			padding: 0 0px;
+			display: block;
+			color: #ffffff;
+
+			margin-bottom: 40px;
+			.box_button_join {
+				padding: 25px 30px;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 20px;
+
+				position: relative;
+				border-radius: 10px;
+				margin-right: 0px;
+				z-index: 1;
+				background: #e11d2e;
+				overflow: hidden;
+				cursor: pointer;
+				margin-bottom: 15px;
+			}
+
+			.box_button_more {
+				padding: 27px 30px;
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 26px;
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 10px;
+
+				&:hover {
+					background: rgba(157, 156, 156, 0.2);
+				}
+			}
+		}
+	}
+}
+@media (max-width: 404px) {
+	.screenPage_item {
+		.item_box_codes {
+			padding: 14px 25px;
+			border: 1px solid rgba(255, 255, 255, 0.09);
+			border-radius: 10px;
+
+			.box_codes_code {
+				font-size: 11px;
+				font-weight: 400;
+				line-height: 17px;
+			}
+		}
+	}
+}

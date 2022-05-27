@@ -1,0 +1,16 @@
+/** @format */
+
+.container {
+	max-width: 1736px;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+}
+@media (max-width: 1700px) {
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+		width: 100%;
+	}
+}
